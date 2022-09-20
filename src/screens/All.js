@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { RefreshControl, Text, View, FlatList } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import fetch from "node-fetch";
 
 import AllItem from "../components/AllItem";
 import tw from "../lib/tailwind";
