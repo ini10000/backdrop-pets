@@ -1,16 +1,9 @@
 import React, { useEffect, useState, useCallback } from "react";
-import {
-  RefreshControl,
-  Text,
-  View,
-  FlatList,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { RefreshControl, Text, View, FlatList } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+import AllItem from "../components/AllItem";
 import tw from "../lib/tailwind";
-import Heart from "../../assets/icons/Heart";
 
 const All = () => {
   const [isLoading, setLoading] = useState(true);
@@ -74,25 +67,6 @@ const All = () => {
     }
   }, [refreshing]);
 
-  const Item = ({ item, onPress, fill, stroke }) => (
-    <View style={tw`flex flex-row justify-between items-center mb-4`}>
-      <View style={tw`flex flex-row items-center`}>
-        <Image
-          source={{
-            uri: item.image.url,
-          }}
-          style={tw`h-10 w-10 rounded-[10px] mr-4`}
-        />
-        <Text style={tw`text-[#212227] text-[16px] font-def font-400`}>
-          {item.name}
-        </Text>
-      </View>
-      <TouchableOpacity onPress={onPress}>
-        <Heart fill={fill} stroke={stroke} />
-      </TouchableOpacity>
-    </View>
-  );
-
   const renderItem = ({ item }) => {
     let fill = "#FFFFFF";
     let stroke = "#E5E5E5";
@@ -101,7 +75,7 @@ const All = () => {
     stroke = !faves.includes(item) ? "#E5E5E5" : "#DE0202";
 
     return (
-      <Item
+      <AllItem
         item={item}
         onPress={() => {
           setSelectedId(item.id);

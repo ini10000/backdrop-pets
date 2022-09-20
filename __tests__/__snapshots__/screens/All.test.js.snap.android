@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<All /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "justifyContent": "space-between",
+      "paddingBottom": 24,
+      "paddingLeft": 24,
+      "paddingRight": 24,
+      "paddingTop": 24,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "display": "flex",
+        "flexBasis": "0%",
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 25,
+          "paddingLeft": 25,
+          "paddingRight": 25,
+          "paddingTop": 25,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#212227",
+            "fontFamily": "SFPRO",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "lineHeight": 24,
+          }
+        }
+      >
+        All Cats
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingLeft": 25,
+          "paddingRight": 25,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text
+          flex-1={true}
+        >
+          Loading...
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

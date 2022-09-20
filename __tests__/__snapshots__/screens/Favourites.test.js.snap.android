@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Favourites /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "justifyContent": "space-between",
+      "paddingBottom": 24,
+      "paddingLeft": 24,
+      "paddingRight": 24,
+      "paddingTop": 24,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 25,
+          "paddingLeft": 25,
+          "paddingRight": 25,
+          "paddingTop": 25,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#212227",
+            "fontFamily": "SFPRO",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "lineHeight": 24,
+          }
+        }
+      >
+        Cats I Like
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingLeft": 12,
+          "paddingRight": 12,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#212227",
+              "fontFamily": "SFPRO",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            }
+          }
+        >
+          No favourites chosen
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
