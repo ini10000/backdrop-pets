@@ -8,10 +8,14 @@
     "ios": "expo start --ios",
     "test": "jest --watch --coverage=false --changedSince=origin/master",
     "testDebug": "jest -o --watch --coverage=false",
-    "testFinal": "jest",
+    "testFinal": "jest --env=jsdom",
     "updateSnapshots": "jest -u --coverage=false"
   },
   "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ],
     "preset": "jest-expo/android",
     "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
@@ -53,5 +57,8 @@
     "react": "^18.2.0",
     "react-test-renderer": "^16.14.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "jest-fetch-mock": "^3.0.3"
+  }
 }
